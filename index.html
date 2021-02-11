@@ -15,6 +15,24 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+	     <style>  
+	     
+.parallaxBar1 {
+  /* The image used */
+    height: auto ;
+     background-image: url("assets/img/Bombons_trufas.jpg");
+    position: relative; 
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.borda_texto{
+-webkit-text-stroke-width: 2px;
+-webkit-text-stroke-color: #000;
+font-size: 4em; color: #fffdd9;
+}
+</style>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -38,12 +56,13 @@
             </div>
         </nav>
         <!-- Masthead-->
-        <header class="masthead bg-primary text-white text-center">
+       <div class="parallaxBar1" data-speed="20" data-type="background">
+        <header   class="masthead  text-white text-center">
             <div class="container d-flex align-items-center flex-column">
                 <!-- Masthead Avatar Image-->
                 <img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="" />
                 <!-- Masthead Heading-->
-                <h1 class="masthead-heading text-uppercase mb-0">La Dulcíssima</h1>
+                <h1 class="borda_texto masthead-heading text-uppercase mb-0">La Dulcíssima</h1>
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
@@ -51,9 +70,10 @@
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Masthead Subheading-->
-                <p class="masthead-subheading font-weight-light mb-0">Telefone para pedidos Whatsapp (15) 996727847</p>
+                <p class="borda_texto masthead-heading  mb-0">Pedidos Whatsapp (15) 996727847</p>
             </div>
         </header>
+        </div>
         <!-- Portfolio Section-->
 
         <section class="page-section portfolio" id="portfolio">
